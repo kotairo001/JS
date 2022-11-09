@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,200;1,300;1,400;1,600;1,800&display=swap" rel="stylesheet">
+</head>
+<style>
+    body {
+        font-family: 'Poppins', sans-serif;
+        box-sizing: border-box;
+        font-size: 18px;
+        margin: 0;
+        padding: 0;
+        line-height: 1.5;
+        color: white;
+    }
+    header {
+        width: 50%;
+        font-size: 36px;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 15px;
+        background-color: black
+    }
+    h3 {
+        margin-left: 15px;
+    }
+    section {
+        line-height: 1.8;
+        background-color: black;
+        width: 50%;
+    }
+    section div {
+        margin-left: 20px;
+    }
+    section span {
+        display: inline-block;
+        margin-left: 40px;
+    }
+    button {
+        width: 100px;
+        margin-left: 10px;
+    }
+    .button {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        margin: 15px 0;
+    }
+</style>
+<body>
+    <header>
+        <div>
+            Sơ yếu lý lịch
+        </div>
+    </header>
+    <main>
+        <section class="in4">
+            <h3>
+                I. Thông tin cá nhân
+            </h3>
+            <div>
+                1. Họ và tên:
+            </div>
+            <span id="name"></span>
+            <div>2. Ngày sinh:</div>
+            <span id="birth"></span>
+            <div>3. Giới tính</div>
+            <span id="sex"></span>
+            <!-- <script>
+                let a = prompt("Tên bạn là gì?")
+                document.getElementById("name").innerHTML=(a)
+                let b = prompt("Ngày sinh của bạn?")
+                document.getElementById("birth").innerHTML=(b)
+                let c = prompt("Giới tính của bạn?")
+                document.getElementById("sex").innerHTML=(c)
+            </script> -->
+        </section>
+        <section>
+            <h3>II. Trình độ học vấn</h3>
+            <div>4. Văn hóa:</div>
+            <span id="info"></span>
+            <div>5. Trình độ học vấn:</div>
+            <span id="study"></span>
+            <!-- <script>
+                let d = prompt("Trình độ văn hóa của bạn?")
+                document.getElementById("info").innerHTML=(d)
+                let e = prompt("Trình độ học vấn?")
+                document.getElementById("study").innerHTML=(e)
+            </script> -->
+        </section>
+        <section>
+            <h3>III. Nghề nghiệp</h3>
+            <div>6. Công việc 1:</div>
+            <span id="job1"></span>
+            <div>7. Công việc 2:</div>
+            <span id="job2"></span>
+            <!-- <script>
+                let f = prompt("Công việc bạn muốn làm nhất?")
+                document.getElementById("job1").innerHTML=(f)
+                let g = prompt("Ngoài ra, bạn còn muốn làm công việc gì?")
+                document.getElementById("job2").innerHTML=(g)
+            </script> -->
+        </section>
+    </main>
+    <div class="button">
+    <button onclick="myFunction()">Nhập</button>
+    </div>
+    <script>
+        function myFunction () {
+                let a = prompt("Tên bạn là gì?")
+                document.getElementById("name").innerHTML=(a)
+                let b = prompt("Ngày sinh của bạn?")
+                document.getElementById("birth").innerHTML=(b)
+                let c = prompt("Giới tính của bạn?")
+                document.getElementById("sex").innerHTML=(c)
+                let d = prompt("Trình độ văn hóa của bạn?")
+                document.getElementById("info").innerHTML=(d)
+                let e = prompt("Trình độ học vấn?")
+                document.getElementById("study").innerHTML=(e)
+                let f = prompt("Công việc bạn muốn làm nhất?")
+                document.getElementById("job1").innerHTML=(f)
+                let g = prompt("Ngoài ra, bạn còn muốn làm công việc gì?")
+                document.getElementById("job2").innerHTML=(g)
+        }
+    </script>
+</body>
+</html>
